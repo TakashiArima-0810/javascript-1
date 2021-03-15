@@ -1,0 +1,25 @@
+h3 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1 {
+   text-align:center; 
+}
+
+.buttons {
+    text-align:center;
+}
+
+#start {
+    height:45px;
+}
+
+#stop{
+    height:45px;
+}
+
+#reset {
+    margin-left:15px;
+    height:45px;
+}
