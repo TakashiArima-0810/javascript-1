@@ -23,19 +23,24 @@ function stopWatch(){
           hours++;
           minutes = 0;
         }
-        
 time.innerHTML = hours + ":" + minutes + ":" + seconds + ":" + mseconds;
 }
 
 start.addEventListener("click",function(){
   interval = setInterval(stopWatch, 100);
+  start.disabled = "disabled";
+  stop.disabled = ""
 })
 
 stop.addEventListener("click",function(){
   clearInterval(interval);
+  start.disabled = "";
+  stop.disabled = "disabled"
 })
 
 reset.addEventListener("click",function(){
   clearInterval(interval);
-  time.innerHTML = "0:0:0:0"
+  time.innerHTML = "0:0:0:0";
+  start.disabled = ""
+  stop.disabled = ""
 })
